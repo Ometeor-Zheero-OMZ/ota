@@ -1,0 +1,29 @@
+[package]
+name = "ota-compiler"
+version = "0.1.0"
+authors = ["Ometeor-Zheero-OMZ <sicsempertyrannis98@gmail.com>"]
+description = "ハードウェア制御を行うためのコンパイラ"
+repository = "https://github.com/Ometeor-Zheero-OMZ/ota-compiler"
+readme = "README.md"
+categories = ["The Ota Language", "lexer", "parser", "ast", "compiler", "rust-like", "c-like", "embedded"]
+edition = "2024"
+rust-version = "1.86"
+
+[badges]
+maintenance = { status = "passively-maintained" }
+
+[dependencies]
+rustyline = "15.0.0"
+
+[profile.dev]
+opt-level = 3
+incremental = false
+
+[profile.release]
+opt-level = 3
+lto = "fat"
+codegen-units = 1
+panic = "abort"
+strip = true
+debug = false
+incremental = false
