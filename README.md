@@ -1,14 +1,10 @@
 <h1>The Ota Language</h1>
 
----
-
 <p>
     This language is designed with a focus on low-level memory control and safety, making it suitable for systems programming tasks such as developing kernel drivers and operating systems. It combines the robustness of Rust with the flexible memory manipulation capabilities of C.
 </p>
 
 <h2>Directories</h2>
-
----
 
 ```
 rust/
@@ -55,8 +51,6 @@ rust/
 ```
 
 <h2>Status</h2>
-
----
 
 > ⚠️ This project is still under active development and not yet ready for production use.
 
